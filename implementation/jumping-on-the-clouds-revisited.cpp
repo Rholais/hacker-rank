@@ -12,8 +12,10 @@ int main() {
     size_t k = 0;
     cin >> n >> k;
     size_t a = 0;
+    bool b = false;
     for (size_t i = 0; i != n; ++i) {
-        if (!(i % k)) {
+        cin >> b;
+        if (!(i % k) && b) {
             ++a;
         }
     }
